@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--><link rel="stylesheet" href="/static/style.css"><!-->
+  <style>
+      body {
+          background-color: #31F6D4;
+      }
+
+      header {
+          display: flex;
+          width: 180vh;
+          position: relative;
+          left: 7%;
+          background-color: #2A69D4;
+          border-radius: 7px;
+          justify-content: center;
+          box-shadow: 5px 5px 15px black;       
+          margin: 7px;  
+      }
+
+      .pai {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: 170vh;
+        position: relative;
+        left: 10%;
+        padding: 5px;
+        border-radius: 0px 10px 0px 0px;
+      }
+
+      .pai2 {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: 170vh;
+        position: relative;
+        left: 10%;
+        padding: 5px;
+        border-radius: 1px 1px 0px 10px;
+      }
+
+      ul {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          background-color: #3146F6;
+          width: 450px;
+          border-radius: 15px 25px;
+      }
+      li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          background-color: #2AC2D4;
+          height: 65px;
+          width: 300px;
+          border-radius: 7px;
+          box-shadow: 3px 3px 10px black;
+          margin: 5px;
+      }
+
+      .adicionar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #3AABEB;
+          height: 50px;
+          width: 300px;
+          border-radius: 7px;
+          box-shadow: 5px 5px 15px gray;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Linguages de programação</h1>
+  </header>
+  <div class="pai">
+    <div class="adicionar">
+        <form action="/add" method="POST">
+            <input name="linguagem" placeholder="Linguagem">
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+  </div>
+  <div class="pai2">
+    <ul>
+        {% for lin in linguagens %}
+        <li class="itens">
+            <form action="/update/{{ lin.id }}" method="POST">
+            <input name="linguagem" value="{{ lin.name }}">
+            <button type="submit">✏️</button>
+            </form>
+            <a href="/delete/{{ lin.id }}">❌</a>
+        </li>
+        {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>

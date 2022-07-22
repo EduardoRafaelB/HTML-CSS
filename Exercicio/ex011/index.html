@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Midias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <!--<audio src="midia/musica.mp3" controls autoplay></audio> Compativel com MP3, WAV E OGG -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/musica.mp3" type="audio/mpeg"> <!--Algun navegagores podem não ter compatibilidade com alguns tipos de midia auditiva, quando for assim podemos usar a tag <audio> juntamente com a tag <source> (dentro da <audio>) para colocar mais de um arquivo com diferentes tipos-->
+    </audio>
+    <h1>Reproduzindo Video</h1>
+    <p></p>
+</body>
+</html>
