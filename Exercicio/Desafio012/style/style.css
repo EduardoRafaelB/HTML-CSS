@@ -6,7 +6,7 @@ body {
 header {
     position: relative;
     text-align: center;
-    height: 200px;
+    height: 233px;
     background-color: black;
     color: white;
     margin: 0px;
@@ -14,7 +14,8 @@ header {
 }
 
 header > h1 {
-    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
     font-weight: bolder;
     font-size: 55px;
     margin: 0px;
@@ -24,24 +25,59 @@ header > h1 {
 }
 
 header > h2 {
-    position: absolute;
-    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    font-weight: 500;
     font-size: 15px;
     margin: 0px;
-    top: 60%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
 article.blankback {
     background-color: white;
-    height: 600px;
+    height: 680px;
 }
 
 article.blankback > div {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 2%;
+    font-size: 1.7em;
 }
 
-article.
+article#fundo1 {
+    background-color: black;
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 680px;
+}
+
+div.fundopreto {
+    position: relative;
+    padding: 5px 0px;
+    padding-left: 10px;
+    top: 20%;
+    left: 2%;
+    font-size: 1.7em;
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 300px;
+    color: white;
+    border-radius: 6px;
+}
