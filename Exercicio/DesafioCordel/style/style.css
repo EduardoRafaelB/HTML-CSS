@@ -16,8 +16,8 @@ body {
     margin: 0px;
 }
 
-body p {
-    width: 500px;
+main p {
+    width: 100vh;
 }
 
 header {

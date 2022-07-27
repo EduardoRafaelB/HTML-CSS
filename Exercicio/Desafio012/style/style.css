@@ -37,7 +37,7 @@ header > h1 {
     transform: translate(-50%, -50%);
 }
 
-header > h2 {
+header > p {
     font-family: 'Header', sans-serif;
     position: relative;
     font-weight: 500;
@@ -66,19 +66,19 @@ main {
     line-height: 2em;
 }
 
-article.blankback {
+section.blankback {
     background-color: white;
     height: 680px;
 }
 
-article.blankback > div {
+section.blankback > div {
     position: relative;
     top: 20%;
     left: 2%;
     font-size: 1.7em;
 }
 
-article#fundo1 {
+section#fundo1 {
     background-color: black;
     background-image: url('../imagens/background001.jpg');
     background-position: right center;
@@ -88,8 +88,18 @@ article#fundo1 {
     height: 680px;
 }
 
-article p:hover {
+section p:hover {
     text-decoration: underline;
+}
+
+section#fundo2 {
+    background-color: black;
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 680px;
 }
 
 div.fundopreto {
@@ -103,16 +113,6 @@ div.fundopreto {
     width: 500px;
     color: white;
     border-radius: 6px;
-}
-
-article#fundo2 {
-    background-color: black;
-    background-image: url('../imagens/background002.jpg');
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 680px;
 }
 
 footer {
