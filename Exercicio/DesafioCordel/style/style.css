@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Poesia';
+    src: url('../fonts/Sriracha-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Header';
+    src: url('../fonts/PassionOne-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+body p {
+    width: 500px;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    height: 233px;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    box-shadow: 3px 3px 10px black;
+}
+
+header > h1 {
+    font-family: 'Header', sans-serif;
+    position: relative;
+    font-weight: bolder;
+    font-size: 80px;
+    margin: 0px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header > h2 {
+    font-family: 'Header', sans-serif;
+    position: relative;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0px;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    font-family: 'Poesia', sans-serif;
+    font-size: 100%;
+    line-height: 2em;
+}
+
+article.blankback {
+    background-color: white;
+    height: 680px;
+}
+
+article.blankback > div {
+    position: relative;
+    top: 20%;
+    left: 2%;
+    font-size: 1.7em;
+    width: 500px;
+}
+
+article#fundo1 {
+    background-color: black;
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 680px;
+}
+
+article p:hover {
+    text-decoration: underline;
+}
+
+div.fundopreto {
+    position: relative;
+    padding: 5px 0px;
+    padding-left: 10px;
+    top: 20%;
+    left: 2%;
+    font-size: 1.7em;
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 500px;
+    color: white;
+    border-radius: 6px;
+}
+
+article#fundo2 {
+    background-color: black;
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 680px;
+}
+
+footer {
+    height: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
