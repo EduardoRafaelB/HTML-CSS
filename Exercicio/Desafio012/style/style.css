@@ -19,6 +19,8 @@
 body, html {
     min-height: 100vh;
     background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
 }
 
 header {
@@ -34,6 +36,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: 'Header';
+    font-size: 10vw;
 }
 
 header > p {
@@ -51,7 +55,6 @@ a:hover {
 }
 
 main {
-    font-family: 'Poesia', sans-serif;
     font-size: 100%;
     line-height: 2em;
 }
@@ -61,6 +64,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: 'Poesia', sans-serif;
+    font-size: 3.5vw;
 }
 
 section.blankback {
@@ -82,7 +87,8 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.267);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 /*section#fundo1 {
