@@ -11,9 +11,14 @@
     font-weight: normal;
 }
 
-body {
-    background-color: white;
+* {
     margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    min-height: 100vh;
+    background-color: white;
 }
 
 header {
@@ -27,37 +32,22 @@ header {
 }
 
 header > h1 {
-    font-family: 'Header', sans-serif;
-    position: relative;
-    font-weight: bolder;
-    font-size: 80px;
-    margin: 0px;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
 header > p {
-    font-family: 'Header', sans-serif;
-    position: relative;
-    font-weight: 500;
-    font-size: 25px;
-    margin: 0px;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-bottom: 50px;
 }
 
-header a {
+a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
-    color: white;
-    font-weight: bold;
 }
 
 main {
@@ -66,19 +56,36 @@ main {
     line-height: 2em;
 }
 
-section.blankback {
-    background-color: white;
-    height: 680px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
-section.blankback > div {
+section.blankback {
+    background-color: white;
+    color: black;
+}
+
+/*section.blankback > div {
     position: relative;
     top: 20%;
     left: 2%;
     font-size: 1.7em;
+}*/
+
+section.imagem {
+    background-color: rgb(48, 48, 48);
+    color: white;
 }
 
-section#fundo1 {
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.267);
+    width: 400px;
+}
+
+/*section#fundo1 {
     background-color: black;
     background-image: url('../imagens/background001.jpg');
     background-position: right center;
@@ -86,13 +93,13 @@ section#fundo1 {
     background-size: cover;
     background-attachment: fixed;
     height: 680px;
-}
+}*/
 
 section p:hover {
     text-decoration: underline;
 }
 
-section#fundo2 {
+/*section#fundo2 {
     background-color: black;
     background-image: url('../imagens/background002.jpg');
     background-position: right center;
@@ -100,9 +107,9 @@ section#fundo2 {
     background-size: cover;
     background-attachment: fixed;
     height: 680px;
-}
+}*/
 
-div.fundopreto {
+/*div.fundopreto {
     position: relative;
     padding: 5px 0px;
     padding-left: 10px;
@@ -113,7 +120,7 @@ div.fundopreto {
     width: 500px;
     color: white;
     border-radius: 6px;
-}
+}*/
 
 footer {
     height: 20px;
