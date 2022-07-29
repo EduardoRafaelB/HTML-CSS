@@ -73,60 +73,36 @@ section.blankback {
     color: black;
 }
 
-/*section.blankback > div {
-    position: relative;
-    top: 20%;
-    left: 2%;
-    font-size: 1.7em;
-}*/
 
 section.imagem {
     background-color: rgb(48, 48, 48);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
 }
 
-section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.267);
-    display: inline-block;
-    padding: 5px;
-}
-
-/*section#fundo1 {
-    background-color: black;
+section#img01 {
     background-image: url('../imagens/background001.jpg');
     background-position: right center;
-    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 680px;
-}*/
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.473);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 2px 0px black;
+}
 
 section p:hover {
     text-decoration: underline;
 }
-
-/*section#fundo2 {
-    background-color: black;
-    background-image: url('../imagens/background002.jpg');
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 680px;
-}*/
-
-/*div.fundopreto {
-    position: relative;
-    padding: 5px 0px;
-    padding-left: 10px;
-    top: 20%;
-    left: 2%;
-    font-size: 1.7em;
-    background-color: rgba(0, 0, 0, 0.705);
-    width: 500px;
-    color: white;
-    border-radius: 6px;
-}*/
 
 footer {
     height: 20px;
