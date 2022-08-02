@@ -5,17 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            background-color: brown;
+            border: 1px solid black;
+            border-radius: 5px 5px 0px 0px;
+            color: white;
+            font-weight: bold;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            margin-bottom: 50px;
+        }
+
+        thead {
+            background-color: gray;
+        }
+
+        tr.media {
+            background-color: gray;
+        }
+
+        td.num {
+            text-align: center;
+        }
+
+        th, td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
         <thead>
-            <th>Grupo</th>
-            <th>Nomes</th>
-            <th colspan="3">Filmes</th>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -34,7 +73,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th>Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -51,6 +90,75 @@
                 <td>Star Ward 5</td>
                 <td>Taxi Driver</td>
                 <td>Toy Story</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <th colspan="4" scope="row">Total</th>
+                    <td>1000</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+            <tr class="media"> 
+                <th colspan="4">Média de Exatas</th>
+                <td class="num">0,0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+            <tr class="media"> 
+                <th colspan="4">Média de Humanas</th>
+                <td class="num">0,0</td>
             </tr>
         </tbody>
     </table>
