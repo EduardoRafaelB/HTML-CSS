@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itens para Escolher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0px;
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(189,189,189,1) 46%, rgba(0,212,255,1) 100%);
+            transition: background-image 0.5s ease;
+        }
+        
+        header {
+            margin: auto;
+            background: #FFFFFF url("backgroundHeader.jpg") no-repeat fixed;
+            background-size: cover;
+            height: 150px;
+            padding-top: 20px;
+            width: 100%;
+            font-weight: bolder;
+        }
+
+        hr {
+            display: hidden;
+        }
+
+        h1 {
+            position: relative;
+            top: 50%;
+            text-align: center;
+        }
+
+        .item {
+            display: flex;
+            margin-bottom: 20px;
+            background-color: gray;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin: 20px;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .item .details {
+            flex-grow: 1;
+        }
+
+        .item h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .item p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .item button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .search-bar input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pesquisa de serviços</h1>
+    </header>
+
+    <hr>
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar">
+        <button type="button">Buscar</button>
+    </div>
+
+    <div class="item">
+        <img src="personal-shopper.jpg" alt="Item 1">
+        <div class="details">
+            <h3>Personal Shopper</h3>
+            <p>Ajuda pessoas a escolher roupas, acessórios, móveis e outros itens, levando em consideração seu estilo pessoal e preferências.</p>
+            <a href="servico1.html"><button>Contratar</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="profissional-organizador.jpg" alt="Item 2">
+        <div class="details">
+            <h3>Organizador Profissional</h3>
+            <p>Ajuda pessoas a organizar seus espaços, como residências, escritórios e armários, criando sistemas eficientes de armazenamento e organização.</p>
+            <a href="servico2.html"><button>Contratar</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="consultor-etiqueta.jpg" alt="Item 3">
+        <div class="details">
+            <h3>Consultor de Etiqueta</h3>
+            <p>Fornece orientação sobre etiqueta social, boas maneiras, comportamento em eventos e situações específicas.</p>
+            <a href="servico3.html"><button>Contratar</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="viagens.png" alt="Item 3">
+        <div class="details">
+            <h3>Planejador de Viagens Personalizado</h3>
+            <p>Cria roteiros de viagem personalizados de acordo com os interesses e orçamento dos clientes.</p>
+            <a href="servico4.html"><button>Contratar</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="dogwalker.png" alt="Item 3">
+        <div class="details">
+            <h3>Dog Walker (passeador de cães)</h3>
+            <p>Oferece serviços de passeio e exercícios para cães, ajudando a mantê-los saudáveis e felizes.</p>
+            <a href="servico5.html"><button>Contratar</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="personal.jpg" alt="Item 3">
+        <div class="details">
+            <h3>Personal Trainer</h3>
+            <p>Trabalha com indivíduos para desenvolver programas de exercícios personalizados e fornecer orientação e motivação durante os treinos.</p>
+            <a href="servico6.html"><button>Contratar</button></a>
+        </div>
+    </div>
+
+    <script>
+        function adicionarCarrinho(item) {
+            alert("Item '" + item + "' adicionado ao carrinho!");
+        }
+    </script>
+</body>
+</html>

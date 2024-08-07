@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/homepage.css">
 </head>
 <body>
     <header class="hm_header">
@@ -20,6 +20,20 @@
             <br><br><br>
             <input type="submit" value="Enviar">
             </form>
+        </div>
+        <br>
+        <div class="hm_caixaCaptura">
+            <label >Selecione o material</label>
+            <br><br>
+            <select name="materiais">
+                <option>{{ material }}</option>
+            </select>
+            <br><br>
+            <ul>
+                {% for mat in material %}
+                    <li>{{ mat.descricao }}</li>
+                {% endfor %}
+            </ul>
         </div>
     </main>
 </body>

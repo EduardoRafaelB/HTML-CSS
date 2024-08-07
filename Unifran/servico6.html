@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Produto</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(189,189,189,1) 46%, rgb(146, 199, 211) 100%);
+            height: 100%;
+        }
+
+        header {
+            background: #333 url("backgroundHeader.jpg") no-repeat fixed;
+            color: #fff;
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .item img {
+            width: 470px;
+            height: 370px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 17px;
+            padding: 10px;
+        }
+
+        .item .details {
+            flex-grow: 1;
+        }
+
+        .item h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .item p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .item button {
+            background-color: #092f53;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #contrato {
+            background-color: green;
+            font-size: 18px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            background-color: #092f53;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        img {
+            height: 300px;
+            width: 250px;
+        }
+
+        h2 {
+            padding: 10px;
+        }
+
+        p {
+            padding: 0px 20px;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha Loja Online</h1>
+    </header>
+
+    <div class="item">
+        <img src="personal.jpg" alt="Item">
+        <div class="details">
+            <h3>Personal Trainer</h3>
+            <p>Trabalha com indivíduos para desenvolver programas de exercícios personalizados e fornecer orientação e motivação durante os treinos.</p>
+            <form>
+                <label for="name">O que busca?</label>
+                <input type="text" id="name" name="name" required>>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>>
+
+                <button type="submit">enviar</button>
+            </form>
+        </div>
+    </div>
+    <button id="contrato" type="submit">Contratar</button>
+    <h2>O que oferecemos?</h2>
+    <p>O personal shopper é um profissional que presta consultoria em compras, ou seja, realiza e otimiza as compras dos clientes. Sendo assim, ele entende os gostos e objetivos do cliente, faz pesquisas para encontrar melhores oportunidades e efetiva as compras.</p>
+</body>
+</html>

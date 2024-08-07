@@ -13,7 +13,7 @@ main {
     width: 70%;
     background-color: white;
     margin-top: 0px;
-    height: 100vi;
+    height: 100vh;
     padding-top: 10px;
     margin: auto;
     border: 25px;
@@ -33,7 +33,8 @@ main {
 }
 
 .hm_caixaCaptura {
-    margin: 20px 450px;
+    margin-top: 30px;
+    margin: auto;
     box-shadow: rgba(0, 0, 0, 0.199) 2px 2px;
     border-color: black;
     border-radius: 5px;
@@ -48,3 +49,6 @@ main {
     width: 100%;
 }
 
+.lista{
+    text-align: center;
+}
